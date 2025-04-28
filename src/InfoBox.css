@@ -1,0 +1,13 @@
+
+.weatherCard {
+ margin-top: 2rem;
+ display: flex;
+ justify-content: center;
+}
+
+.weatherCard h2 {
+    display: flex;
+    align-items: center; /* Vertically aligns items */
+    justify-content: center; /* Adjusts spacing */
+
+}

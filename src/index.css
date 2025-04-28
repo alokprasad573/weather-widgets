@@ -1,0 +1,15 @@
+@keyframes gradientAnimation {
+  0% { background: linear-gradient(to bottom, #ff9a9e, #fad0c4); }
+  25% { background: linear-gradient(to bottom, #4facfe, #00f2fe); }
+  50% { background: linear-gradient(to bottom, #141E30, #243B55); }
+  75% { background: linear-gradient(to bottom, #ff7e5f, #feb47b); }
+  100% { background: linear-gradient(to bottom, #ff9a9e, #fad0c4); }
+}
+
+body {
+  animation: gradientAnimation 10s infinite alternate;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  transition: background 1s ease-in-out;
+}
