@@ -45,21 +45,25 @@ export default function SearchBox({ updateWeatherInfo }) {
             let weatherData = await getWeatherInfo(city);
             updateWeatherInfo(weatherData);
             setCity('');
+            setError(false);
         } catch (error) {
             setError(true);
+            
         }
+        
     }
 
+
     return (
-      <div className="SearchBox">
-          <form onSubmit={handleSubmit} >
-              <TextField id="city" label="Enter City" variant="outlined" required value={city} onChange={handleChange}  />
-              &nbsp;&nbsp;&nbsp;
-              <br></br><br/>
-              <Button variant="contained" type="submit" size="large">Search</Button>
-              <br></br>
-          </form>
-          {error && <p><b>No such places exist</b></p>}
-      </div>
+        <div className="SearchBox">
+            <form onSubmit={handleSubmit} >
+                <TextField id="city" label="Enter City" variant="outlined" required value={city} onChange={handleChange}  />
+                &nbsp;&nbsp;&nbsp;
+                <br></br><br/>
+                <Button variant="contained" type="submit" size="large">Search</Button>
+                <br></br>
+            </form>
+            {error ? <p><b>No such places exist</b></p> : null}
+        </div>
     );
 };
