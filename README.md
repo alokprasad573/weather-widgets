@@ -1,6 +1,5 @@
 # 🌤️ Weather Widgets
-
-A sleek and modern weather application built with React and Vite. Display real-time weather information through beautiful, interactive widgets.
+A simple weather application built using React and display weather details dynamically.
 
 
 ## ✨ Features
